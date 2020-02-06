@@ -7,19 +7,23 @@ const categories = [
   'Horror',
   'Kids',
   'Learning',
-  'Sci-Fi'
+  'Sci-Fi',
 ];
 
 function BooksForm() {
   return (
     <form>
-      <label>Book Title:</label>
-      <input type="text" name="title" />
-      <select>
+      <label htmlFor="title">
+        Book Title:
+        <input type="text" name="title" id="title" required />
+      </label>
+      <br />
+      <select required>
         {categories.map(category => (
-          <option>{category}</option>
+          <option key={category}>{category}</option>
         ))}
       </select>
+      <button type="submit">Submit</button>
     </form>
   );
 }
