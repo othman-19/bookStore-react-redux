@@ -4,7 +4,7 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 const initState = [
   { title: 'Harry Potter', category: 'Kids', id: Math.random() },
   { title: 'Steve Jobs', category: 'Biography', id: Math.random() },
-  { title: 'Microverse', category: 'Learning', id: Math.random() }
+  { title: 'Microverse', category: 'Learning', id: Math.random() },
 ];
 
 const books = (state = initState, action) => {
