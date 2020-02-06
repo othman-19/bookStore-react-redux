@@ -1,7 +1,9 @@
 import React from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
+import Book from './Book';
 
-function BooksList() {
+function BooksList(props) {
+  console.log(props);
   return (
     <div>
       <h1>Book List</h1>
@@ -19,15 +21,10 @@ function BooksList() {
             <td>Smith</td>
             <td>50</td>
           </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
         </tbody>
       </table>
     </div>
   );
 }
 
-export default BooksList;
+export default connect()(BooksList);
