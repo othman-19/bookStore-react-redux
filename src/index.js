@@ -6,13 +6,22 @@ import { Provider } from 'react-redux';
 import App from './App';
 import rootReducer from './reducers/index';
 
-const store = createStore(
-  rootReducer,
-);
+const stateBook = (title, category) => ({
+  id: Math.random(),
+  title,
+  category
+});
+
+const book1 = stateBook('Harry Potter', 'Kids');
+const book2 = stateBook('Steve Jobs', 'Biography');
+const book3 = stateBook('Microverse', 'Learning');
+const books = [book1, book2, book3];
+
+const store = createStore(rootReducer, { bookestore: books });
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
