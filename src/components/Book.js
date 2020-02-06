@@ -11,10 +11,8 @@ function Book({ book }) {
   );
 }
 
-// Book.propTypes = {
-//   id: PropTypes.number.isRequired,
-//   title: PropTypes.string.isRequired,
-//   category: PropTypes.string.isRequired,
-// };
+Book.propTypes = {
+  book: PropTypes.oneOfType([PropTypes.object]).isRequired,
+};
 
 export default Book;

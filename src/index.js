@@ -9,7 +9,7 @@ import rootReducer from './reducers/index';
 const stateBook = (title, category) => ({
   id: Math.random(),
   title,
-  category
+  category,
 });
 
 const book1 = stateBook('Harry Potter', 'Kids');
@@ -23,5 +23,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
