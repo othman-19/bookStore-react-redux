@@ -1,8 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-// import Book from './Book';
+// import { connect } from 'react-redux';
 
-function BooksList() {
+const BooksList = () => {
   return (
     <div>
       <h1>Book List</h1>
@@ -25,6 +24,6 @@ function BooksList() {
       </table>
     </div>
   );
-}
+};
 
-export default connect()(BooksList);
+export default BooksList;
