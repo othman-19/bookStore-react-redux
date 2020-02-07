@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { createBook } from '../actions/index';
 
 const categories = [
   'Action',
@@ -8,30 +9,33 @@ const categories = [
   'Horror',
   'Kids',
   'Learning',
-  'Sci-Fi'
+  'Sci-Fi',
 ];
 
 class BooksForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      title: '',
-      category: '',
-    };
-	}
-	handleChange = e => {
-		const newBook = {[e.target.name]: e.target.value }
-		this.setState({...this.state,newBook });
-		console.log(this.state)
-	};
+    this.state = {};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-	handleSubmit = () => {
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
 
-	}
-	
+  handleSubmit(e) {
+    e.preventDefault();
+    const { createBook } = this.props;
+    const newBook = { ...this.state, id: Math.random() };
+    createBook(newBook);
+    console.log(this.props);
+    this.setState = ({});
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <label htmlFor="title">
           Book Title:
           <input type="text" name="title" id="title" required onChange={this.handleChange}/>
@@ -48,8 +52,11 @@ class BooksForm extends Component {
   }
 }
 
-const mapStateToProps = state => {
-	return 
+const mapDispatchToProps = dispatch => {
+  return {
+    createBook: book => { dispatch(createBook(book)) }
+  }
 }
 
-export default BooksForm;
+
+export default connect(null, mapDispatchToProps)(BooksForm);
