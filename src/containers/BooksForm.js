@@ -16,7 +16,7 @@ const categories = [
 class BooksForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {title: "" , category: "Action"};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -30,7 +30,7 @@ class BooksForm extends Component {
     const { createBook } = this.props;
     const newBook = { id: Math.random(), ...this.state };
     createBook(newBook);
-    this.setState = ({});
+    this.setState({title: "" , category: "Action"});
   }
 
   render() {
@@ -38,10 +38,10 @@ class BooksForm extends Component {
       <form onSubmit={this.handleSubmit}>
         <label htmlFor="title">
           Book Title:
-          <input type="text" name="title" id="title" required onChange={this.handleChange} />
+          <input type="text" name="title" id="title" value={this.state.title} required onChange={this.handleChange} />
         </label>
         <br />
-        <select name="category" onChange={this.handleChange} required>
+        <select name="category" onChange={this.handleChange} value={this.state.category} required>
           {categories.map(category => (
             <option key={category}>{category}</option>
           ))}
