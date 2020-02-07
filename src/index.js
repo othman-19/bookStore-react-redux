@@ -17,7 +17,8 @@ const book2 = stateBook('Steve Jobs', 'Biography');
 const book3 = stateBook('Microverse', 'Learning');
 const books = [book1, book2, book3];
 
-const store = createStore(rootReducer, { bookestore: books });
+const store = createStore(rootReducer, { books });
+
 
 ReactDOM.render(
   <Provider store={store}>
