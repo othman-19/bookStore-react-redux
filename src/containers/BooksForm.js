@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
 
@@ -29,7 +30,6 @@ class BooksForm extends Component {
     const { createBook } = this.props;
     const newBook = { ...this.state, id: Math.random() };
     createBook(newBook);
-    console.log(this.props);
     this.setState = ({});
   }
 
@@ -38,7 +38,7 @@ class BooksForm extends Component {
       <form onSubmit={this.handleSubmit}>
         <label htmlFor="title">
           Book Title:
-          <input type="text" name="title" id="title" required onChange={this.handleChange}/>
+          <input type="text" name="title" id="title" required onChange={this.handleChange} />
         </label>
         <br />
         <select name="category" onChange={this.handleChange} required>
@@ -52,11 +52,13 @@ class BooksForm extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    createBook: book => { dispatch(createBook(book)) }
-  }
-}
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({
+  createBook: book => dispatch(createBook(book)),
+});
 
 
 export default connect(null, mapDispatchToProps)(BooksForm);
