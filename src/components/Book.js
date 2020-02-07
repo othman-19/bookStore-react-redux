@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Book({ book, removeBook}) {
+function Book({ book, removeBook }) {
   return (
     <tr>
       <td>{book.id}</td>
