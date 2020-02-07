@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
 function BooksList({ books }) {
+  console.log(typeof books)
   const bookList = books.map(book => <Book book={book} key={book.id} />);
   return (
     <div>
@@ -27,7 +28,7 @@ const mapStateToProps = state => ({
 });
 
 BooksList.propTypes = {
-  books: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  books: PropTypes.array.isRequired,
 };
 
 export default connect(mapStateToProps)(BooksList);
