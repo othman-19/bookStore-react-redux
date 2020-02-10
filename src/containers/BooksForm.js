@@ -58,7 +58,7 @@ class BooksForm extends Component {
               <option key={category}>{category}</option>
             ))}
           </select>
-          <button type="submit">Submit</button>
+          <button className="Rectangle-2" type="submit">Submit</button>
         </form>
       </div>
     );

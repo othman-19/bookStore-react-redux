@@ -16,7 +16,7 @@ function CategoryFilter({ filterChangeHandler }) {
   return (
     <div className="filter">
       <span className="filter-select">Select Book Category:</span>
-      <select name="filter" onChange={e => filterChangeHandler(e.target.value)}>
+      <select className="select-filter" name="filter" onChange={e => filterChangeHandler(e.target.value)}>
         {filters.map(filter => (
           <option key={filter}>{filter}</option>
         ))}
