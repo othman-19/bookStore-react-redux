@@ -37,19 +37,17 @@ class BooksForm extends Component {
     const { title, category } = this.state;
     return (
       <div className="form-listing">
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="title">
-            Book Title:
-            <input
-              type="text"
-              name="title"
-              id="title"
-              value={title}
-              required
-              onChange={this.handleChange}
-            />
-          </label>
-          <br />
+        <h3 className="add-book">ADD NEW BOOK</h3>
+        <form onSubmit={this.handleSubmit} className="books-form">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            value={title}
+            required
+            onChange={this.handleChange}
+            placeholder="Book Title"
+          />
           <select
             name="category"
             onChange={this.handleChange}
