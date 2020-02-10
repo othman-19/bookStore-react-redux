@@ -16,7 +16,7 @@ const book1 = stateBook('Harry Potter', 'Kids');
 const book2 = stateBook('Steve Jobs', 'Biography');
 const book3 = stateBook('Microverse', 'Learning');
 const books = [book1, book2, book3];
-const filter = null;
+const filter = 'All';
 
 const store = createStore(rootReducer, { books, filter });
 

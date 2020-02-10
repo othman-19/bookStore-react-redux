@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function CategoryFilter() {
+function CategoryFilter({ filterChangeHandler }) {
   const filters = [
     'All',
     'Action',
@@ -9,18 +10,23 @@ function CategoryFilter() {
     'Horror',
     'Kids',
     'Learning',
-    'Sci-Fi'
+    'Sci-Fi',
   ];
+
   return (
-    <label >
-      Select Book Category:
-      <select name="filter">
+    <div>
+      <h3>Select Book Category:</h3>
+      <select name="filter" onChange={e => filterChangeHandler(e.target.value)}>
         {filters.map(filter => (
           <option key={filter}>{filter}</option>
         ))}
       </select>
-    </label>
+    </div>
   );
 }
+
+CategoryFilter.propTypes = {
+  filterChangeHandler: PropTypes.func.isRequired,
+};
 
 export default CategoryFilter;
