@@ -8,8 +8,12 @@ function Book({ book, removeBook }) {
         <span className="School-of">{book.category}</span>
         <span className="Current-Chapter">Current Chapter</span>
       </div>
-      {book.title}
+      <div className="second-row">
+        <span className="title">{book.title}</span>
+        <span className="chapterNo">Chapter 15</span>
+      </div>
 
+      <span className="author">Author's Name</span>
       <button
         className="Rectangle-2"
         type="button"

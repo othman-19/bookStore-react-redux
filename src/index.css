@@ -3,6 +3,10 @@ body {
   background-color: #f5f6fa;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -91,6 +95,7 @@ li {
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   margin: 15px auto;
+  padding: 15px;
 }
 
 .Rectangle-2 {
@@ -144,6 +149,42 @@ li {
   float: right;
 }
 
-.first-row {
-  margin: 10px;
+.title {
+  width: 197px;
+  height: 29px;
+  font-family: RobotoSlab;
+  font-size: 44px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  width: 107px;
+  height: 19px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.chapterNo {
+  width: 126px;
+  height: 21px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+  float: right;
 }
