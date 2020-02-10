@@ -5,6 +5,16 @@ import BooksForm from './containers/BooksForm';
 function App() {
   return (
     <div className="App">
+      <div className="panel-bg">
+        <ul>
+          <li className="logo">Bookstore CMS</li>
+
+          <li className="BOOKS">Books</li>
+          <li className="CATEGORIES">Categories</li>
+          <li className="icon">icon</li>
+        </ul>
+      </div>
+
       <BooksList />
       <BooksForm />
     </div>
