@@ -10,7 +10,7 @@ const categories = [
   'Horror',
   'Kids',
   'Learning',
-  'Sci-Fi',
+  'Sci-Fi'
 ];
 
 class BooksForm extends Component {
@@ -36,30 +36,46 @@ class BooksForm extends Component {
   render() {
     const { title, category } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="title">
-          Book Title:
-          <input type="text" name="title" id="title" value={title} required onChange={this.handleChange} />
-        </label>
-        <br />
-        <select name="category" onChange={this.handleChange} value={category} required>
-          {categories.map(category => (
-            <option key={category}>{category}</option>
-          ))}
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+      <div className="form-listing">
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="title">
+            Book Title:
+            <input
+              type="text"
+              name="title"
+              id="title"
+              value={title}
+              required
+              onChange={this.handleChange}
+            />
+          </label>
+          <br />
+          <select
+            name="category"
+            onChange={this.handleChange}
+            value={category}
+            required
+          >
+            {categories.map(category => (
+              <option key={category}>{category}</option>
+            ))}
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     );
   }
 }
 
 BooksForm.propTypes = {
-  createBook: PropTypes.func.isRequired,
+  createBook: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({
-  createBook: book => dispatch(createBook(book)),
+  createBook: book => dispatch(createBook(book))
 });
 
-
-export default connect(null, mapDispatchToProps)(BooksForm);
+export default connect(
+  null,
+  mapDispatchToProps
+)(BooksForm);

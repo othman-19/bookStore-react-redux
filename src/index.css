@@ -188,3 +188,9 @@ li {
   color: #121212;
   float: right;
 }
+
+.form-listing {
+  width: 1200px;
+  margin: 15px auto;
+  padding: 15px;
+}
