@@ -10,7 +10,7 @@ const categories = [
   'Horror',
   'Kids',
   'Learning',
-  'Sci-Fi'
+  'Sci-Fi',
 ];
 
 class BooksForm extends Component {
@@ -66,14 +66,14 @@ class BooksForm extends Component {
 }
 
 BooksForm.propTypes = {
-  createBook: PropTypes.func.isRequired
+  createBook: PropTypes.func.isRequired,
 };
 
 const mapDispatchToProps = dispatch => ({
-  createBook: book => dispatch(createBook(book))
+  createBook: book => dispatch(createBook(book)),
 });
 
 export default connect(
   null,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(BooksForm);

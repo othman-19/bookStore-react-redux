@@ -13,7 +13,7 @@ function Book({ book, removeBook }) {
         <span className="chapterNo">Chapter 15</span>
       </div>
 
-      <span className="author">Author's Name</span>
+      <span className="author">Author Name</span>
       <button
         className="Rectangle-2"
         type="button"
@@ -27,7 +27,7 @@ function Book({ book, removeBook }) {
 
 Book.propTypes = {
   book: PropTypes.oneOfType([PropTypes.object]).isRequired,
-  removeBook: PropTypes.func.isRequired
+  removeBook: PropTypes.func.isRequired,
 };
 
 export default Book;

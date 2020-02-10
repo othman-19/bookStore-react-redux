@@ -11,7 +11,7 @@ function App() {
 
           <li className="BOOKS">Books</li>
           <li className="CATEGORIES">Categories</li>
-          <li className="icon">icon</li>
+          <li className="icon"><i className="fas fa-user" /></li>
         </ul>
       </div>
 
