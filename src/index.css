@@ -70,3 +70,16 @@ li {
   float: right;
   padding-right: 50px;
 }
+
+.filter {
+  margin: 20px;
+  text-align: right;
+  padding: 5px;
+}
+
+.filter-select {
+  color: #121212;
+  opacity: 0.5;
+  padding-right: 10px;
+  font-weight: bold;
+}
