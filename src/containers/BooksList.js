@@ -11,9 +11,18 @@ function BooksList({
   changeFilter,
   filter,
 }) {
-  console.log(filter);
   const handleRemoveBook = book => removeBook(book);
-  const bookList = books.map(
+  const getBooks = filter => {
+    switch (filter) {
+      case 'All':
+        return books;
+      case filter:
+        return books.filter(book => book.category === filter);
+      default:
+        return books;
+    }
+  };
+  const bookList = getBooks(filter).map(
     book => <Book book={book} key={book.id} removeBook={handleRemoveBook} />,
   );
   const handleFilterChange = filter => {
