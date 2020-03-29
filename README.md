@@ -1,6 +1,6 @@
 # PROJECT: Calculator_React
 The BookStore is a React-Redux project, build according to asked functional and technical requirements.
-In this application the user is able to add new books or delete them, he has also an access to a list of existed books which is able to be filtred by some categories. 
+In this application the user is able to add new books or delete them, he has also an access to a list of existed books which is able to be filtred by some categories. The Application state is managed separately from components with Redux.
 ![screenshot](./bookstore.png)
 
 > This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
@@ -19,7 +19,16 @@ In this application the user is able to add new books or delete them, he has als
 - npm
 - CSS
 - ES6
+## Features
+- The user is able to add new books or delete them.
 To get a local copy up and running follow these simple example steps.
+- The user has an access to a list of existed books which is able to be filtred by some categories with a dropdown menu.
+
+## Future Features
+- Implmenting the user authentication feature.
+- Add a back-end Api that stores the data permanently.
+- Add mobile and teblet versions.,
+- Add percentage circles for the user reading progress for every book.
 
 ### Prerequisites
 
