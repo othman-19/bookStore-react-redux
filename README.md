@@ -1,7 +1,7 @@
 # PROJECT: Calculator_React
-The BookStore project comes with the React-Redux section. In this project we will learn how to build a simple React/Redux application. We will work in a real-world project for a fictional company that requires help. The project has been split into multiple milestones, and each milestone has functional and technical requirements that will need to implement.
-
-![screenshot](./Screenshot.png)
+The BookStore is a React-Redux project, build according to asked functional and technical requirements.
+In this application the user is able to add new books or delete them, he has also an access to a list of existed books which is able to be filtred by some categories. 
+![screenshot](./bookstore.png)
 
 > This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
@@ -65,6 +65,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 [Othamane Naamani](https://github.com/othman-19/).
 [Sumaer jolly](https://github.com/sumaerjolly/).
+
+## Contact
+
+[Othmane Namani](https://github.com/othman-19/).  
+[Email: othmanenaamani@gmail.com](mailto:othmanenaamani@gmail.com).  
+[Portfilio](https://othman-19.github.io/my_portfolio/).  
+[LinkedIn](https://www.linkedin.com/in/othman-namani/).  
+[twitter](https://twitter.com/ONaamani).  
+[DEV Community](https://dev.to/othman).  
+[Angel List](https://angel.co/othmane-namani).  
 
 
 ## 🤝 Contributing
