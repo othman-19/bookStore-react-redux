@@ -27,13 +27,13 @@ In this application the user is able to add new books or delete them, he has als
 - The user is able to add new books or delete them.
 - The user has an access to a list of existed books which is able to be filtred by some categories with a dropdown menu.
 
-To get a local copy up and running follow these simple example steps.
-
 ## Future Features
 - Implmenting the user authentication feature.
 - Add a back-end Api that stores the data permanently.
 - Add mobile and teblet versions.,
 - Add percentage circles for the user reading progress for every book.
+
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
