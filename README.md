@@ -1,8 +1,8 @@
 # PROJECT: Book Store
 
-The BookStore is a React-Redux project, build according to asked functional and technical requirements.
-In this application the user is able to add new books or delete them, he has also an access to a list of existed books which is able to be filtred by some categories. The Application state is managed separately from components with Redux.
+The BookStore is a React-Redux project, built according to asked functional and technical requirements.
 
+In this application the user is able to add new books or delete them, he has also an access to a list of existed books which is able to be filtred by some categories. The Application state is managed separately from components with Redux.
 
 ![screenshot](./bookstore.png)
 
@@ -84,9 +84,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 [Othmane Namani](https://github.com/othman-19/)  
 [Email: othmanenaamani@gmail.com](mailto:othmanenaamani@gmail.com)  
-[Portfilio](https://othman-19.github.io/my_portfolio/)  
+[Portfolio](https://othman-19.github.io/my_portfolio/)  
 [LinkedIn](https://www.linkedin.com/in/othman-namani/)  
-[twitter](https://twitter.com/ONaamani)  
+[Twitter](https://twitter.com/ONaamani)  
 [DEV Community](https://dev.to/othman)  
 [Angel List](https://angel.co/othmane-namani)  
 
