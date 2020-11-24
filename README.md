@@ -10,7 +10,7 @@ In this application the user is able to add new books or delete them, he has als
 
 ## Live Demo
 
-[Live Demo Link](https://book-store-oth-sum.herokuapp.com/).
+[Live Demo Link](https://book-store-othman.netlify.app/).
 
 ## Built With
 
